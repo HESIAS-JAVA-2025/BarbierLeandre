@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  mysql_hesias:
+    image: mysql:9
+    restart: always
+    environment:
+      - MYSQL_DATABASE=examjava
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_PASSWORD=root
+   ## volumes:
+     # - ./db:/var/lib/mysql
+    ports:
+      - 3307:3306

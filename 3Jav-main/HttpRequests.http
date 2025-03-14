@@ -1,0 +1,32 @@
+
+### Créer une voiture
+POST http://localhost:8080/api/cars/create
+Content-Type: application/json
+
+{
+  "model": "Corolla",
+  "power": 150
+}
+
+### Récupérer toutes les voitures
+GET http://localhost:8080/api/cars
+Accept: application/json
+
+### Récupérer une voiture par ID
+GET http://localhost:8080/api/cars/1
+Accept: application/json
+
+### Supprimer une voiture par ID
+DELETE http://localhost:8080/api/cars/delete/1
+
+### Supprimer la puissance d’une voiture
+DELETE http://localhost:8080/api/cars/delete/power/1
+
+### Mettre à jour une voiture
+PUT http://localhost:8080/api/cars/1
+Content-Type: application/json
+
+{
+  "model": "Civic",
+  "power": 180
+}
